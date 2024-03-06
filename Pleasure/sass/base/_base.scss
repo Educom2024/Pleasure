@@ -10,6 +10,9 @@ a{
     text-decoration: none;
     list-style: none;
 }
+a, span{
+    display: inline-block;
+}
 ul,ol{
     list-style:none;
 }
