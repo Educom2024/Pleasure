@@ -1,21 +1,30 @@
 .nav{
     &__menu{
-        background-color:#32ff7e;
+        background-color:#badc58;
         max-width: 95%;
         margin-left: auto;
         margin-right: auto;
         display: flex;
         justify-content: space-between;
         margin-top: 10px;
-        border-radius:2rem;
+        border-radius:20rem;
         padding: 1rem;
         align-items: center;
+        font-family: "Madimi One", sans-serif;
         &--logo{
-            width: 20%;
+            width: 15%;
         }
         &__box{
+            display: flex;
+            align-items: center;
+            i{
+                padding: 0.5rem;
+                color: black;
+                font-size: 1.1rem;
+            }
             &__caja{
                 display: flex;
+                margin-right: 16rem;
                 &__elements{
                     &--link{
                         padding: 1rem;
