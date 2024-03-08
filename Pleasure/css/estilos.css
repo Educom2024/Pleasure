@@ -22,7 +22,7 @@ ul, ol {
 }
 
 .contenedor {
-  max-width: 80rem;
+  max-width: 87rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -32,7 +32,6 @@ ul, ol {
   margin-top: 0.6rem;
   display: flex;
   justify-content: space-between;
-  border-radius: 20rem;
   padding: 0.3rem;
   align-items: center;
   font-family: "Madimi One", sans-serif;
@@ -86,6 +85,12 @@ ul, ol {
 }
 .nav__menu__box__caja__elements--link i {
   font-size: 0.8rem;
+}
+
+.portada__top--img {
+  width: 100%;
+  margin-top: 0.6rem;
+  display: block;
 }
 
 /*# sourceMappingURL=estilos.css.map */
