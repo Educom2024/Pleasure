@@ -1,6 +1,6 @@
 .nav{
     &__menu{
-        background-color:#b06f8d;
+        background-color:#0aa78b;
         margin-top: 0.6rem;
         display: flex;
         justify-content: space-between;
@@ -20,14 +20,14 @@
             &__cart{
                 margin-right: 2rem;
                 font-size: 1.35rem;
-                color: black;
+                color: white;
                 display: flex;
                 &__shop{
                     padding: 0.6rem;
                 }
             }
             span{
-                background-color: #b06f8d;
+                background-color: #0aa78b;
                 width: 1rem;
                 height: 1rem;
                 display: flex;
@@ -38,8 +38,8 @@
                 position: absolute;
                 top: -0.6rem;
                 right: 4.7rem;
-                border: 0.1px solid black;
-                color: black;
+                border: 0.1px solid white;
+                color: white;
                 margin-top:1.3rem;
                 margin-right:2.5rem;
                 padding-top: 0.07rem;
@@ -51,7 +51,7 @@
                     &--link{
                         padding:1.5rem;
                         display: inline-block;
-                        color: black;
+                        color: white;
                         i{
                             font-size: 0.8rem;
                         }

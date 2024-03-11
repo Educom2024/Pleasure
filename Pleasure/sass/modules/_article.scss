@@ -1,9 +1,24 @@
 .portada{
     &__top{
+        position: relative;
+        &__fondo{
+            position: absolute;
+            display: flex;
+            top: 5rem;
+            &__reseña{
+                background-color: aqua;
+                width: 20rem;
+                height: 10rem;
+                &__beneficios{
+                    background-color: aquamarine;
+                    height: 10rem;
+                }
+            }
+        }
         &--img{
         width: 100%;
-        margin-top: 0.6rem;
         display: block;
+        padding-top: 0.6rem;
         }
     }
 }
