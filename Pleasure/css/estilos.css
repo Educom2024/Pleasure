@@ -89,12 +89,10 @@ ul, ol {
 }
 
 .portada__top {
-  position: relative;
+  background-image: url(../../img/chocoalmendas1.png);
 }
 .portada__top__fondo {
-  position: absolute;
   display: flex;
-  top: 5rem;
 }
 .portada__top__fondo__reseña {
   background-color: aqua;
@@ -104,11 +102,6 @@ ul, ol {
 .portada__top__fondo__reseña__beneficios {
   background-color: aquamarine;
   height: 10rem;
-}
-.portada__top--img {
-  width: 100%;
-  display: block;
-  padding-top: 0.6rem;
 }
 
 /*# sourceMappingURL=estilos.css.map */
