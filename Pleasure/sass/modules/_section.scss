@@ -1,0 +1,30 @@
+.detalle{
+    &__padre{
+        &__mani{
+            display: flex;
+            justify-content: space-between;
+            &__contenido{
+                margin: 6rem 3rem;
+                border: 1px solid #8abd2b;
+                padding: 1rem;
+                border-radius: 1rem;
+                &--text1{
+                    font-size: 5rem;
+                    font-family: "Great Vibes", cursive;
+                    color: #8abd2b;
+                }
+                &--text2{
+                    font-size: 2rem;
+                    i{
+                        color:#8abd2b;
+                    }
+                }
+            }
+            img{
+                max-width: 36rem;
+                height: 30rem;
+                margin: 2rem 4rem;
+            }
+        }
+    }
+}
