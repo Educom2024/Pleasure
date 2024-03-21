@@ -4,17 +4,17 @@
             display: flex;
             justify-content: space-between;
             &__contenido{
-                margin: 6rem 3rem;
-                border: 1px solid #8abd2b;
-                padding: 1rem;
-                border-radius: 1rem;
+                margin-left: 11rem;
+                padding-top: 9rem;
                 &--text1{
                     font-size: 5rem;
                     font-family: "Great Vibes", cursive;
                     color: #8abd2b;
+                    letter-spacing: 0.4rem;
                 }
                 &--text2{
-                    font-size: 2rem;
+                    font-size: 1.4rem;
+                    font-family: "Karla", sans-serif;
                     i{
                         color:#8abd2b;
                     }
