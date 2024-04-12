@@ -30,6 +30,11 @@ ul, ol {
   margin-right: auto;
 }
 
+.contenedor2 {
+  margin-left: 5.5rem;
+  margin-right: 5.5rem;
+}
+
 .nav__menu {
   background-color: #8abd2b;
   margin-top: 0.6rem;
@@ -94,14 +99,14 @@ ul, ol {
   background-image: url(../../img/original.png);
   background-size: cover;
   max-width: 100%;
-  height: 35rem;
   margin-top: 0.6rem;
 }
 .portada__top__fondo {
   display: flex;
 }
 .portada__top__fondo__reseña {
-  margin: 3rem 44rem 0 2rem;
+  width: 58%;
+  margin-top: 2rem;
 }
 .portada__top__fondo__reseña--text1 {
   color: #8abd2b;
@@ -113,17 +118,19 @@ ul, ol {
 .portada__top__fondo__reseña--text2 {
   color: white;
   font-size: 2rem;
-  margin-top: 0.7rem;
   line-height: 3rem;
+  margin-bottom: 11rem;
+  margin-top: 1rem;
 }
 
 .detalle__padre__mani {
   display: flex;
   justify-content: space-between;
+  gap: 5rem;
+  padding-top: 2rem;
 }
 .detalle__padre__mani__contenido {
-  margin-left: 11rem;
-  padding-top: 9rem;
+  padding-top: 7rem;
 }
 .detalle__padre__mani__contenido--text1 {
   font-size: 5rem;
@@ -139,17 +146,49 @@ ul, ol {
   color: #8abd2b;
 }
 .detalle__padre__mani img {
-  max-width: 36rem;
-  height: 30rem;
-  margin: 2rem 4rem;
+  max-width: 50%;
 }
 
-.tipos__padre {
+.tipos__contenedor {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 3rem;
+  padding-top: 2rem;
 }
-.tipos__padre__variedad1 img {
-  max-width: 80%;
+.tipos__contenedor__variedad1 {
+  width: calc(25% - 2.25rem);
+}
+.tipos__contenedor__variedad1 img {
+  max-width: 100%;
+}
+.tipos__contenedor__variedad1 h4 {
+  text-align: center;
+  padding-top: 0.4rem;
+}
+.tipos__contenedor__variedad1 span {
   display: block;
+  text-align: center;
+  padding-top: 0.4rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+.tipos__contenedor__variedad1 a {
+  display: block;
+  text-align: center;
+  padding: 0.5rem;
+  color: black;
+  margin: 0.5rem;
+  border: 3px solid #8abd2b;
+  border-radius: 2rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tipos__contenedor__variedad1 a:hover {
+  background-color: #8abd2b;
+  color: black;
+  transition: all 0.5s;
 }
 
 /*# sourceMappingURL=estilos.css.map */

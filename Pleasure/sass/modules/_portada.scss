@@ -3,12 +3,13 @@
         background-image: url(../../img/original.png);
         background-size: cover;
         max-width: 100%;
-        height: 35rem;
         margin-top: 0.6rem;
         &__fondo{
             display: flex;
             &__reseña{
-                margin: 3rem 44rem 0 2rem;
+                // margin: 4rem 44rem 12rem 2rem;
+                width: 58%;
+                margin-top: 2rem;
                 &--text1{
                     color: #8abd2b;
                     font-size: 5rem;
@@ -19,8 +20,9 @@
                 &--text2{
                     color: white;
                     font-size: 2rem;
-                    margin-top: 0.7rem;
                     line-height: 3rem;
+                    margin-bottom: 11rem;
+                    margin-top: 1rem;
                 }
             }
         }
