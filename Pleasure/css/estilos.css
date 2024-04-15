@@ -35,6 +35,10 @@ ul, ol {
   margin-right: 5.5rem;
 }
 
+.nav {
+  position: fixed;
+  width: 100%;
+}
 .nav__menu {
   background-color: #8abd2b;
   margin-top: 0.6rem;
@@ -95,6 +99,9 @@ ul, ol {
   font-size: 0.8rem;
 }
 
+.portada {
+  padding-top: 5.5rem;
+}
 .portada__top {
   background-image: url(../../img/original.png);
   background-size: cover;
@@ -121,6 +128,24 @@ ul, ol {
   line-height: 3rem;
   margin-bottom: 11rem;
   margin-top: 1rem;
+}
+.portada__top__fondo__reseña--text3 {
+  display: block;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 0.5rem;
+  color: black;
+  border: 3px solid #8abd2b;
+  border-radius: 2rem;
+  height: 3.5rem;
+  margin-top: 25rem;
+  margin-left: -20rem;
+  width: 17rem;
+}
+.portada__top__fondo__reseña--text3:hover {
+  background-color: #8abd2b;
+  color: white;
+  transition: all 0.5s;
 }
 
 .detalle__padre__mani {
