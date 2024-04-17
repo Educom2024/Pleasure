@@ -106,7 +106,7 @@ ul, ol {
   background-image: url(../../img/original.png);
   background-size: cover;
   max-width: 100%;
-  margin-top: 0.6rem;
+  margin-top: 0.7rem;
 }
 .portada__top__fondo {
   display: flex;
@@ -130,17 +130,14 @@ ul, ol {
   margin-top: 1rem;
 }
 .portada__top__fondo__reseña--text3 {
-  display: block;
-  font-size: 1.8rem;
-  text-align: center;
-  padding: 0.5rem;
-  color: black;
-  border: 3px solid #8abd2b;
+  background-color: #ce5b87;
+  color: white;
   border-radius: 2rem;
-  height: 3.5rem;
-  margin-top: 25rem;
-  margin-left: -20rem;
-  width: 17rem;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin-left: 18rem;
+  margin-top: 2.2rem;
 }
 .portada__top__fondo__reseña--text3:hover {
   background-color: #8abd2b;
@@ -212,7 +209,7 @@ ul, ol {
 }
 .tipos__contenedor__variedad1 a:hover {
   background-color: #8abd2b;
-  color: black;
+  color: white;
   transition: all 0.5s;
 }
 
@@ -247,8 +244,8 @@ ul, ol {
   text-align: center;
 }
 .footer__padre__hijo1__hijo2__box1__form button {
-  width: 30%;
-  height: 40%;
+  width: 40%;
+  padding: 0.5rem 0.5rem;
   border-radius: 5rem;
   border: none;
   cursor: pointer;

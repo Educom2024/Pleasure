@@ -4,7 +4,7 @@
         background-image: url(../../img/original.png);
         background-size: cover;
         max-width: 100%;
-        margin-top: 0.6rem;
+        margin-top: 0.7rem;
         &__fondo{
             display: flex;
             &__reseña{
@@ -25,23 +25,19 @@
                     margin-top: 1rem;
                 }
                 &--text3{
-                    display: block;
-                    font-size: 1.8rem;
-                    text-align: center;
-                    padding: 0.5rem;
-                    color: black;
-                    border: 3px solid #8abd2b;
-                    border-radius: 2rem;
-                    height: 3.5rem;
-                    margin-top: 25rem;
-                    margin-left: -20rem;
-                    width: 17rem;
-                    
-                &:hover{
-                    background-color:#8abd2b;
+                    background-color: #ce5b87;
                     color: white;
-                    transition: all 0.5s;
-                }
+                    border-radius: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    width: 40%;
+                    margin-left: 18rem; 
+                    margin-top: 2.2rem;   
+                    &:hover{
+                        background-color:#8abd2b;
+                        color: white;
+                        transition: all 0.5s;
+                    }
                 }
             }
         }
