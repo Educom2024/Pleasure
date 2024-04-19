@@ -7,6 +7,10 @@
         padding-top: 2rem;
         &__variedad1{
             width: calc(25% - 9rem / 4);
+            @media only screen and (max-width:770px){
+                width: calc(50% - 9rem / 4);
+            }
+            
             img{
                 max-width:100%;
             }

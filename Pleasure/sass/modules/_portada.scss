@@ -5,6 +5,9 @@
         background-size: cover;
         max-width: 100%;
         margin-top: 0.7rem;
+        @media only screen and (max-width:770px){
+            margin-top: 0;
+        }
         &__fondo{
             display: flex;
             &__reseña{
@@ -13,9 +16,11 @@
                 &--text1{
                     color: #8abd2b;
                     font-size: 5rem;
-                    font-weight: 500;
                     font-family: "Great Vibes", cursive;
                     font-weight: 600;
+                    @media only screen and (max-width:770px){
+                        width: 38rem;
+                    }
                 }
                 &--text2{
                     color: white;
@@ -23,6 +28,10 @@
                     line-height: 3rem;
                     margin-bottom: 11rem;
                     margin-top: 1rem;
+                    @media only screen and (max-width:770px){
+                        width: 38rem;
+                        text-align: center;
+                    }
                 }
                 &--text3{
                     background-color: #ce5b87;
@@ -32,7 +41,11 @@
                     justify-content: center;
                     width: 40%;
                     margin-left: 18rem; 
-                    margin-top: 2.2rem;   
+                    margin-top: 2.2rem;
+                    @media only screen and (max-width:770px){
+                        margin-left: 11rem;
+                        margin-top: 2rem;
+                    } 
                     &:hover{
                         background-color:#8abd2b;
                         color: white;
