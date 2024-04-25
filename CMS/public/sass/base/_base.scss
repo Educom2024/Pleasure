@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+}
+html{
+    font-size: 1rem;
+    background-color: rgb(249, 234, 234);
+}
+a{
+    text-decoration: none;
+    list-style: none;
+}
+a, span{
+    display: inline-block;
+}
+ul,ol{
+    list-style:none;
+}
