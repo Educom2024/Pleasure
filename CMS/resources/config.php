@@ -5,6 +5,7 @@
     defined("DS") ? null : define("DS", DIRECTORY_SEPARATOR);
 
     defined("VIEW_FRONT") ? NULL : define("VIEW_FRONT", __DIR__ . DS . "views" . DS . "front");
+    defined("VIEW_BACK") ? NULL : define("VIEW_BACK", __DIR__ . DS . "views" . DS . "back");
 
     defined("DB_HOST") ? null : define("DB_HOST", "localhost");
     defined("DB_USER") ? null : define("DB_USER", "root");
