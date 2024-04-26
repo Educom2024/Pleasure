@@ -13,3 +13,5 @@ CREATE TABLE usuarios (
     user_status TINYINT(1) DEFAULT 0 COMMENT 'status 0: no activo, status 1: activo',
     user_rol VARCHAR(50) NOT NULL DEFAULT 'suscriptor'
 )
+
+INSERT INTO usuarios (user_nombres, user_apellidos, user_email, user_pass) VALUES ('Edu', 'Almiron', 'edu.almiron@gmail.com', '123')

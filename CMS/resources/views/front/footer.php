@@ -16,8 +16,18 @@
                 <img src="./img/logo2.png" alt="">
                 </div>
                  <div class="footer__padre__hijo1__hijo2__img__registro">
-                        <a href="#" class="footer__padre__hijo1__hijo2__img__registro--reg">Registrate!</a>
-                        <a href="#" class="footer__padre__hijo1__hijo2__img__registro--reg1">Iniciar sesión</a>
+                <?php 
+                    if(!isset($_SESSION['user_rol'])){
+                      ?>
+                        <a href="login.php" class="footer__padre__hijo1__hijo2__img__registro--reg">Iniciar Sesión</a>
+                        <a href="register.php" class="footer__padre__hijo1__hijo2__img__registro--reg1">Registrate!</a>
+                    <?php } else {
+                        ?>
+                         <a href="perfil.php" class="footer__padre__hijo1__hijo2__img__registro--reg1">
+                         <i class="fa-solid fa-user"></i>Hola! <?php echo $_SESSION['user_nombres']; ?>
+                         </a>
+                    <?php }
+                ?>
                 </div>
             </div>
             <div class="footer__padre__hijo1__hijo2__img__registro__whts contenedor2">

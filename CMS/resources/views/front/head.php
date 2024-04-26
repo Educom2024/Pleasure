@@ -1,3 +1,11 @@
+<?php 
+    if(!isset($_COOKIE['email'])){
+        unset($_SESSION['user_id']);
+        unset($_SESSION['user_nombres']);
+        unset($_SESSION['user_apellidos']);
+        unset($_SESSION['user_rol']);
+    }
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>

@@ -19,6 +19,15 @@
                         Contacto
                         <i class="fa-solid fa-angle-down"></i>
                     </a></li>
+                    <?php
+                        if (isset($_SESSION['user_rol']) && $_SESSION['user_rol'] == 'admin'){
+                            ?>
+                                <li class="nav__menu__box__caja__elements"><a href="admin" class="nav__menu__box__caja__elements--link">
+                                    ADMIN
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a></li>
+                        <?php }
+                    ?>
                 </ul>
                     <a href="#" class="nav__menu__box__cart">
                         <div class="nav__menu__box__cart__shop">
