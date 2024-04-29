@@ -15,3 +15,12 @@ CREATE TABLE usuarios (
 )
 
 INSERT INTO usuarios (user_nombres, user_apellidos, user_email, user_pass) VALUES ('Edu', 'Almiron', 'edu.almiron@gmail.com', '123')
+
+CREATE TABLE productos(
+    prod_id INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    prod_nombre VARCHAR(100) NOT NULL,
+    prod_descri TEXT NOT NULL,
+    prod_precio DECIMAL(10,2) NOT NULL,
+    prod_canti INT NOT NULL,
+    prod_img TEXT NOT NULL
+)

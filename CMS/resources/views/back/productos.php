@@ -14,7 +14,7 @@
                 <h6 class="text-primary">Lista de Productos</h6>
             </div>
             <div class="card-body">
-                <table class="table table-hover table-responsive">
+                <table class="table table-hover">
                     <thead>
                         <tr>
                             <th>Nombre</th>
@@ -25,19 +25,20 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                    <?php get_productos();?>
+                        <!-- <tr>
                             <td>Mantequilla</td>
                             <td>
                                 <img src="../img/chocomani.png" alt="Mantequilla Chocomani" width="200px">
                             </td>
-                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, natus.</td>
+                            <td>Mantequilla de mani</td>
                             <td>S/ 40.00</td>
                             <td>100</td>
                             <td>
                                 <a href="#" class="btn btn-warning">editar</a>
-                                <a href="#" class="btn btn-danger mt-2">borrar</a>
+                                <a href="#" class="btn btn-danger">borrar</a>
                             </td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </table>
             </div>
