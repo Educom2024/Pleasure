@@ -25,6 +25,9 @@
                         if(isset($_GET['productos_add'])){
                             include(VIEW_BACK . DS . "productos_add.php");
                         }
+                        if(isset($_GET['productos_edit'])){
+                            include(VIEW_BACK . DS . "productos_edit.php");
+                        }
                     ?>
                 </div>
                 <!-- /.container-fluid -->

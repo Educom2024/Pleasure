@@ -9,6 +9,7 @@
                 <i class="fas fa-plus"></i> Agregar productos</a>
             </div>
         </div>
+        <?php mostrar_msj(); ?>
         <div class="card shadow">
             <div class="card-header">
                 <h6 class="text-primary">Lista de Productos</h6>
@@ -26,21 +27,9 @@
                     </thead>
                     <tbody>
                     <?php get_productos();?>
-                        <!-- <tr>
-                            <td>Mantequilla</td>
-                            <td>
-                                <img src="../img/chocomani.png" alt="Mantequilla Chocomani" width="200px">
-                            </td>
-                            <td>Mantequilla de mani</td>
-                            <td>S/ 40.00</td>
-                            <td>100</td>
-                            <td>
-                                <a href="#" class="btn btn-warning">editar</a>
-                                <a href="#" class="btn btn-danger">borrar</a>
-                            </td>
-                        </tr> -->
                     </tbody>
                 </table>
+                <?php post_productoDelete(); ?>
             </div>
         </div>
     </div>
