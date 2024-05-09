@@ -15,8 +15,8 @@
                         Nosotros
                         <i class="fa-solid fa-angle-down"></i>
                     </a></li>
-                    <li class="nav__menu__box__caja__elements"><a href="" class="nav__menu__box__caja__elements--link">
-                        Contacto
+                    <li class="nav__menu__box__caja__elements"><a href="./" class="nav__menu__box__caja__elements--link">
+                        Home
                         <i class="fa-solid fa-angle-down"></i>
                     </a></li>
                     <?php
