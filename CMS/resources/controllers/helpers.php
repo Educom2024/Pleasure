@@ -55,4 +55,14 @@ DELIMITADOR;
     function fetch_assoc($query) {
         return mysqli_fetch_assoc($query);
     }
+
+    function display_msjLand($msj, $tipo){
+        $msj = <<<DELIMITADOR
+            <div class="{$tipo} mt-1">
+                {$msj}
+            </div>
+DELIMITADOR;
+        return $msj;
+    }
+
 ?>

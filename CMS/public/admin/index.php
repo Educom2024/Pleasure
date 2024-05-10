@@ -28,6 +28,9 @@
                         if(isset($_GET['productos_edit'])){
                             include(VIEW_BACK . DS . "productos_edit.php");
                         }
+                        if(isset($_GET['comentarios'])){
+                            include(VIEW_BACK . DS . "comentarios.php");
+                        }
                     ?>
                 </div>
                 <!-- /.container-fluid -->

@@ -24,3 +24,23 @@ CREATE TABLE productos(
     prod_canti INT NOT NULL,
     prod_img TEXT NOT NULL
 )
+
+CREATE TABLE comentarios (
+    com_id INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    com_user_id INT(10) UNSIGNED NOT NULL,
+    com_prod_id INT(10) UNSIGNED NOT NULL,
+    com_mensaje TEXT NOT NULL,
+    com_puntaje INT NOT NULL,
+    com_fecha DATE NOT NULL,
+    com_status TINYINT(1) DEFAULT 0 NOT NULL
+)
+
+ALTER TABLE comentarios
+    ADD CONSTRAINT fk_userId FOREIGN KEY (com_user_id)
+    REFERENCES usuarios (user_id)
+    ON DELETE RESTRICT ON UPDATE CASCADE
+
+ALTER TABLE comentarios
+    ADD CONSTRAINT fk_prodId FOREIGN KEY (com_prod_id)
+    REFERENCES productos (prod_id)
+    ON DELETE RESTRICT ON UPDATE CASCADE

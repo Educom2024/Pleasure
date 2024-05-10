@@ -15,22 +15,37 @@
                     <?php echo $item['prod_nombre']; ?>
                 </h3>
                 <div class="producto__container__data_stars mt-2">
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>
-                    <i class="fa-regular fa-star star"></i>    
+                    <?php 
+                        if($item['total_com'] != 0){
+                            $puntaje = round($item['total_puntaje'] / $item['total_com']);
+                            for($i = 0; $i < $puntaje; $i++){
+                                echo '<i class="fa-solid fa-star star-yellow"></i>';
+                            }
+                            if($puntaje != 5){
+                                for($j = 0; $j < 5 - $puntaje; $j++){
+                                    echo '<i class="fa-regular fa-star star-yellow"></i>';
+                                }
+                            }
+                        } else {
+                            ?>
+                                <i class="fa-regular fa-star star-yellow"></i>
+                                <i class="fa-regular fa-star star-yellow"></i>
+                                <i class="fa-regular fa-star star-yellow"></i>
+                                <i class="fa-regular fa-star star-yellow"></i>
+                                <i class="fa-regular fa-star star-yellow"></i>    
+                        <?php }
+                    ?>
                 </div>
                 <div class="producto__container__data__precio mt-4">
-                    s/40.00           
+                    S/ <?php echo $item['prod_precio']; ?>          
                 </div>
                 <div class="producto__container__data__descri mt-4">
-                   Mantequilla de mani 100% natural
+                   <?php echo $item['prod_descri']; ?>
                 </div>
                 <form class="producto__container__data__form mt-5" method="post">
-                    <input type="hidden" name="prod_id" value="1">
+                    <input type="hidden" name="prod_id" value="<?php echo $item['prod_id']; ?>">
                     <label for="cantidad">Cantidad</label>
-                    <input type="number" name="prod_canti" value="1" min="1" max="10">
+                    <input type="number" name="prod_canti" value="1" min="1" max="<?php echo $item['prod_canti']; ?>">
                     <input type="submit" value="Agregar al carrito" name="carritoAdd">
                 </form>
             </div>
@@ -41,6 +56,10 @@
             <h2 class="comentarios__container__titulo">
                 Comentarios
             </h2>
+            <?php 
+                mostrar_msj();
+                post_enviarComentario($item['prod_id']);
+            ?>
             <form class="comentarios__container__form mt-2" method="post">
                 <div class="comentarios__container__form__group">
                     <textarea name="com_mensaje" cols="30" rows="3" placeholder="Deja tu comentario"></textarea>

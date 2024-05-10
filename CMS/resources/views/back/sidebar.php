@@ -31,6 +31,11 @@
                     <i class="fas fa-box-open"></i>
                     <span>Productos</span></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.php?comentarios">
+                    <i class="fas fa-comments"></i>
+                    <span>Comentarios</span></a>
+            </li>
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
