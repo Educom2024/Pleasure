@@ -6,7 +6,8 @@
 
     <section class="producto">
         <div class="producto__container contenedor2">
-            <?php $item = get_productoLand(); ?>
+            <?php $item = get_productoLand(); 
+            ?>
             <div class="producto__container__imgBox">
                 <img src="img/<?php echo $item['prod_img']; ?>" alt="<?php echo $item['prod_nombre']; ?>">
             </div>
@@ -73,8 +74,10 @@
                 </div>
             </form>
             <div class="comentarios__container__box">
+                
             </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="js/comentarios.js"></script>
     <?php include(VIEW_FRONT . DS . "footer.php"); ?>
