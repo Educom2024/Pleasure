@@ -65,4 +65,11 @@ DELIMITADOR;
         return $msj;
     }
 
+    function validarSesion(){
+        if(!isset($_SESSION['user_id'])){
+            set_mensaje(display_msj("Debes de iniciar sesión para continuar con la compra", "danger"));
+            return redirect('login.php');
+        }
+    }
+
 ?>

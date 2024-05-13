@@ -59,6 +59,7 @@
             </h2>
             <?php 
                 mostrar_msj();
+                post_carritoAdd();
                 post_enviarComentario($item['prod_id']);
             ?>
             <form class="comentarios__container__form mt-2" method="post">

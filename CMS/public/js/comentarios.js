@@ -3,8 +3,17 @@ const url = location.href;
 const urlArray = url.split("=");
 const id = +urlArray[1];
 
+const fechaOption ={
+    wekkday: 'short',
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+}
+
 const renderComentario = comentario => {
 
+    const fecha = new Date(comentario.com_fecha);
+    
     let plantillaEstrellas = '';
 
     for(let i = 0; i < comentario.com_puntaje; i++){
@@ -18,12 +27,12 @@ const renderComentario = comentario => {
     return `
         <div class="comentarios__container__box__item">
             <div class="comentarios__container__box__item__imgBox">
-                <img src="img/user.png" alt="${comentario.usuario}">
+                <img src="img/${!comentario.user_img ? 'user.png' : comentario.user_img}" alt="${comentario.usuario}">
             </div>
             <div class="comentarios__container__box__item__data">
                 <div class="comentarios__container__box__item__data__top">
                     <span>${comentario.usuario}</span>
-                    <span>${comentario.com_fecha}</span>
+                    <span>${fecha.toLocaleDateString("es-ES", fechaOption)}</span>
                 </div>
                 <p class="comentarios__container__box__item__data__descri mt-1">
                     ${comentario.com_mensaje}

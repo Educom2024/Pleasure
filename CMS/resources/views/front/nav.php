@@ -29,7 +29,7 @@
                         <?php }
                     ?>
                 </ul>
-                    <a href="#" class="nav__menu__box__cart">
+                    <a href="cart.php" class="nav__menu__box__cart">
                         <div class="nav__menu__box__cart__shop">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </div>

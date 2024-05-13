@@ -6,6 +6,7 @@
 
     <section class="cart">
         <div class="cart__container contenedor">
+            <?php mostrar_msj(); ?>
             <table class="cart__container__table">
                 <thead>
                     <tr>
@@ -18,6 +19,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <?php get_mostrarItemsCarrito(); ?>
                 </tbody>
             </table>
            

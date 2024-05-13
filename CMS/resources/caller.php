@@ -8,4 +8,5 @@
     
     require_once("controllers/landingControllers/productosLandController.php");
     require_once("controllers/landingControllers/comentariosLandController.php");
+    require_once("controllers/landingControllers/carritoLandController.php");
 ?>
