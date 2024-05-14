@@ -521,22 +521,26 @@ ul, ol {
   font-size: 1.4rem;
 }
 
-.cart {
-  /* padding-top: 1.5rem; */
+/* Carrito */
+h2{
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem 0 3rem;
+  color: #ce5b87;
+  font-weight: 100;
 }
 .cart__container {
   padding: 5rem 0;
 }
 .cart__container__table {
   width: 100%;
-  border-spacing: 0;
   border-collapse: collapse;
 }
 .cart__container__table thead th {
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   font-size: 1.1rem;
-  border-spacing: 0;
   padding: 1rem 0;
+  font-family: "Karla", sans-serif;
 }
 .cart__container__table tbody tr {
   transition: all 0.3s;
@@ -547,11 +551,14 @@ ul, ol {
 }
 .cart__container__table tbody tr td {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  font-size: 1.6rem;
+  font-size: 1.1rem;
   text-align: center;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
 }
 .cart__container__table tbody tr td img {
   width: 10rem;
+  padding-top: 0.3rem;
 }
 
 .success {
@@ -577,20 +584,20 @@ ul, ol {
 }
 
 .btn {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: white;
-  padding: 0.5rem 1rem 0.4rem 1rem;
+  padding: 0.3rem 0.8rem 0.2rem 0.8rem;
   border-radius: 0.5rem;
   cursor: pointer;
   border: none;
 }
 
 .btn-warning {
-  background-color: #f1c40f;
+  background-color: #ce5b87;
 }
 
 .btn-success {
-  background-color: #1abc9c;
+  background-color: #9bd332;
 }
 
 .btn-danger {
@@ -600,4 +607,5 @@ ul, ol {
 .btn-secondary {
   background-color: rgb(51, 51, 51);
 }
+
 /*# sourceMappingURL=estilos.css.map */

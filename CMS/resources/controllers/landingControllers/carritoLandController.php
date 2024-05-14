@@ -19,9 +19,10 @@
         validarSesion();
         $query = query("SELECT * FROM carrito a INNER JOIN productos b ON a.cart_prod_id = b.prod_id WHERE a.cart_user_id= {$_SESSION['user_id']}");
         if(contar_filas($query) >= 1){
-            
+            $total =0;
             while($fila = fetch_assoc($query)){
                 $sub_total = $fila['prod_precio'] * $fila['cart_canti'];
+                $total += $sub_total;
                 $item = <<<DELIMITADOR
                 <tr>
                     <td>
@@ -43,11 +44,22 @@ DELIMITADOR;
             $trTotal = <<<DELIMITADOR
                 <tr>
                     <td colspan="3"></td>
-                    <td style="padding: 10px 0;"><strong>Total:</strong></td>
-                    <td>S/ 100.00</td>
+                    <td style="padding: 10px 0; font-weight: 600; font-size:1.4rem;">Total:</td>
+                    <td>S/ {$total}</td>
                 </tr>
 DELIMITADOR;
             echo $trTotal;
+        }
+    }
+
+    function validarCarrito(){
+        if(isset($_SESSION['user_id'])){
+            $query = query("SELECT COUNT(a.cart_id) AS canti, SUM(b.prod_precio * a.cart_canti) AS total FROM carrito a INNER JOIN productos b ON a.cart_prod_id = b.prod_id WHERE a.cart_user_id = {$_SESSION['user_id']}");
+            if(contar_filas($query) >= 1){
+                return fetch_assoc($query);
+            }
+        }   else {
+                return ["canti" => 0, "total" => 0];
         }
     }
 ?>

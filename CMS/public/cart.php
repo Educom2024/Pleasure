@@ -9,8 +9,9 @@
             <?php mostrar_msj(); ?>
             <table class="cart__container__table">
                 <thead>
+                <h2>Mi Carrito de Compras!</h2>
                     <tr>
-                        <th>Imagen</th>
+                        <th></th>
                         <th>Nombre</th>
                         <th>Precio</th>
                         <th>Cantidad</th>
@@ -22,8 +23,6 @@
                     <?php get_mostrarItemsCarrito(); ?>
                 </tbody>
             </table>
-           
-
         </div>
     </section>
 
