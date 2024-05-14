@@ -32,7 +32,7 @@ const renderComentario = comentario => {
             <div class="comentarios__container__box__item__data">
                 <div class="comentarios__container__box__item__data__top">
                     <span>${comentario.usuario}</span>
-                    <span>${fecha.toLocaleDateString("es-ES", fechaOption)}</span>
+                    <span style="font-size: 1rem;">${fecha.toLocaleDateString("es-ES", fechaOption)}</span>
                 </div>
                 <p class="comentarios__container__box__item__data__descri mt-1">
                     ${comentario.com_mensaje}

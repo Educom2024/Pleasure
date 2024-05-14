@@ -375,12 +375,12 @@ ul, ol {
  /* Añadir al carrito */
 
  .producto {
-  padding-top: 1.5rem;
+  /* padding-top: 1.5rem; */
 }
 .producto__container {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 5rem;
+  padding-top: 6.5rem;
 }
 .producto__container__imgBox {
   width: 30%;
@@ -396,18 +396,19 @@ ul, ol {
 .producto__container__data__titulo {
   font-size: 2rem;
   padding-bottom: 2rem;
+  font-weight: 100;
 }
 .producto__container__data__precio {
   color: #ce5b87;
   font-size: 1.5rem;
-  font-weight: 500;
   padding: 2rem 0;
 }
 .producto__container__data__descri {
   color: rgb(51, 51, 51);
-  font-size: 1.4rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   padding-bottom: 2rem;
+  font-family: "Karla", sans-serif;
 }
 .producto__container__data__form {
   display: flex;
@@ -416,6 +417,9 @@ ul, ol {
 .producto__container__data__form label {
   color: rgb(51, 51, 51);
   font-size: 1.3rem;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.1rem;
 }
 .producto__container__data__form input[type=number] {
   width: 3.4rem;
@@ -445,9 +449,7 @@ ul, ol {
   padding-bottom: 5rem;
 }
 .comentarios__container__titulo {
-  color: rgb(51, 51, 51);
   font-size: 1.5rem;
-  text-transform: uppercase;
   padding-bottom: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -456,6 +458,7 @@ ul, ol {
 }
 .comentarios__container__form__group textarea {
   width: 100%;
+  font-family: "Karla", sans-serif;
   font-size: 1rem;
   padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -472,8 +475,8 @@ ul, ol {
 .comentarios__container__form__group input[type=submit] {
   background-color: #9bd332;
   border: none;
-  font-size: 1.4rem;
-  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  padding: 0.4rem 0.9rem;
   border-radius: 0.5rem;
   cursor: pointer;
   color: white;
@@ -507,24 +510,26 @@ ul, ol {
   justify-content: space-between;
 }
 .comentarios__container__box__item__data__top span {
-  font-size: 1.6rem;
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 700;
 }
 .comentarios__container__box__item__data__descri {
-  font-size: 1.4rem;
+  font-family: "Karla", sans-serif;
+  font-size: 1.1rem;
   line-height: 2rem;
   color: rgba(0, 0, 0, 0.6);
 }
 .comentarios__container__box__item__data__stars {
   color: #f1c40f;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 /* Carrito */
+
 h2{
   font-size: 2rem;
-  text-align: center;
   padding: 1rem 0 3rem;
   color: #ce5b87;
   font-weight: 100;
