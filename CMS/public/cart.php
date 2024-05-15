@@ -9,7 +9,7 @@
             <?php mostrar_msj(); ?>
             <table class="cart__container__table">
                 <thead>
-                <h2 class="contenedor2">Mi Carrito de Compras<i class="fa-solid fa-cart-shopping"></i></h2>
+                <h2 class="contenedor2">Mi Compras<i class="fa-solid fa-cart-shopping"></i></h2>
                     <tr>
                         <th></th>
                         <th>Nombre</th>

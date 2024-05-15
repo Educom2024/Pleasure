@@ -15,7 +15,7 @@
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">¡Bienvenido!</h1>
+                                        <h1 style="" class="h4 text-gray-900 mb-4"><strong>¡Bienvenido a Pleasure!</h1>
                                     </div>
                                     <?php mostrar_msj(); ?>
                                     <?php validar_user_login(); ?>
@@ -38,14 +38,14 @@
                                         <!-- <a href="index.html" class="btn btn-primary btn-user btn-block">
                                             Login
                                         </a> -->
-                                        <button type="Submit" class="btn btn-primary btn-user btn-block" name="login">Iniciar sesión</button>
+                                        <button type="Submit" class=" btn-user btn-block" name="login">Iniciar sesión</button>
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                        <a class="small" href="forgot-password.html">¿Olvidaste la contraseña?</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="register.html">Create an Account!</a>
+                                        <a class="small" href="register.html">Crea una cuenta!</a>
                                     </div>
                                 </div>
                             </div>
