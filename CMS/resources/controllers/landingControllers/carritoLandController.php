@@ -33,9 +33,9 @@
                     <td>{$fila['cart_canti']}</td>
                     <td>S/ {$sub_total}</td>
                     <td>
-                        <a href="" class="btn btn-warning"><i class="fa-solid fa-minus"></i></a>
-                        <a href="" class="btn btn-success"><i class="fa-solid fa-plus"></i></a>
-                        <a href="" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></a>
+                        <a href="cart.php?restar={$fila['cart_id']}" class="btn btn-warning"><i class="fa-solid fa-minus"></i></a>
+                        <a href="cart.php?aumentar={$fila['cart_id']}" class="btn btn-success"><i class="fa-solid fa-plus"></i></a>
+                        <a href="cart.php?borrar={$fila['cart_id']}" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></a>
                     </td>
                 </tr>
 DELIMITADOR;
@@ -60,6 +60,46 @@ DELIMITADOR;
             }
         }   else {
                 return ["canti" => 0, "total" => 0];
+        }
+    }
+
+    function carritoRestar(){
+        if(isset($_GET['restar'])){
+            $cart_id = limpiar_string(trim($_GET['restar']));
+            $query = query("SELECT cart_canti FROM carrito WHERE cart_id = {$cart_id}");
+            $fila = fetch_assoc($query);
+            $cart_canti = $fila['cart_canti'];
+            if($cart_canti > 1) {
+                query("UPDATE carrito SET cart_canti = cart_canti - 1 WHERE cart_id = {$cart_id}");
+            } else{
+                set_mensaje(display_msjLand("El item no puede ser menor a 1", "danger"));
+            }
+            redirect("cart.php");
+        }
+    }
+
+    function carritoAumentar(){
+        if(isset($_GET['aumentar'])){
+            $cart_id = limpiar_string(trim($_GET['aumentar']));
+            $query = query("SELECT a.cart_canti, b.prod_canti FROM carrito a INNER JOIN productos b ON a.cart_prod_id = b.prod_id WHERE a.cart_id = {$cart_id}");
+            $fila = fetch_assoc($query);
+            $prod_stock = $fila['prod_canti'];
+            $cart_canti = $fila['cart_canti'];
+            if($cart_canti < $prod_stock){
+                query("UPDATE carrito SET cart_canti = cart_canti + 1 WHERE cart_id = {$cart_id}");
+            } else{
+                set_mensaje(display_msjLand("No puedes agregar mas de {$prod_stock} items del producto al carrito", "danger"));
+            }
+            redirect("cart.php");
+        }
+    }
+
+    function carritoBorrar(){
+        if(isset($_GET['borrar'])){
+            $cart_id = limpiar_string(trim($_GET['borrar']));
+            query("DELETE FROM carrito WHERE cart_id = {$cart_id}");
+            set_mensaje(display_msjLand("El item fue retirado del carrito correctamente", "success"));
+            return redirect("cart.php");
         }
     }
 ?>

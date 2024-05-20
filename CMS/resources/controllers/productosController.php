@@ -41,14 +41,14 @@
             <tr>
                 <td>{$fila['prod_nombre']}</td>
                 <td>
-                <img src="../img/{$fila['prod_img']}" alt="{$fila['prod_nombre']}" width="150px">
+                <img src="../img/{$fila['prod_img']}" alt="{$fila['prod_nombre']}" width="100px">
                 </td>
                 <td>{$fila['prod_descri']}</td>
                 <td>S/ {$fila['prod_precio']}</td>
                 <td>{$fila['prod_canti']}</td>
                 <td>
-                <a href="index.php?productos_edit={$fila['prod_id']}" class="btn btn-warning">editar</a>
-                <a href="javascript:void(0)" class="btn btn-danger delete_link" rel="{$fila['prod_id']}" titulo="Eliminar Producto" tabla="productos" accion="delete">borrar</a> 
+                <a href="index.php?productos_edit={$fila['prod_id']}" class="btn btn-warning ml-5">editar</a>
+                <a href="javascript:void(0)" class="btn btn-danger delete_link ml-5 mt-2" rel="{$fila['prod_id']}" titulo="Eliminar Producto" tabla="productos" accion="delete">borrar</a> 
                 </td>
             </tr>
 DELIMITADOR;

@@ -21,7 +21,7 @@
                             <th>Nombre</th>
                             <th>Imagen</th>
                             <th>Descripción</th>
-                            <th>Precio</th>
+                            <th style="width: 6rem">Precio</th>
                             <th>Cantidad</th>
                         </tr>
                     </thead>

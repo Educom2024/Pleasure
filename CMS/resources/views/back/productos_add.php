@@ -27,7 +27,7 @@
                     <div class="form-group">
                         <label for="prod_precio">Precio:</label>
                         <input type="number" class="form-control" id="prod_precio" name="prod_precio" step="any">
-                        <div class="text-danger">
+                        <div class="text-danger"
                             <?php echo !empty($errores['precio']) ? $errores['precio'] : ""; ?>
                         </div>
                     </div>

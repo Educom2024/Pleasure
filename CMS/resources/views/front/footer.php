@@ -9,7 +9,7 @@
                     </div>
                     <div class="footer__padre__hijo1__hijo2__box1">
                         <i class="fa-regular fa-envelope"></i>
-                        <h4 class="footer__padre__hijo1__hijo2__box1--text2">PlaserNatural@pleasure.com.pe</h4>
+                        <h4 class="footer__padre__hijo1__hijo2__box1--text2">PlacerNatural@pleasure.com.pe</h4>
                     </div>
                 </div>
                 <div class="footer__padre__hijo1__hijo2__img">

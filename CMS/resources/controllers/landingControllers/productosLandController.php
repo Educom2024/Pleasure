@@ -29,7 +29,7 @@ DELIMITADOR;
             redirect("./");
         } else{
             $id = limpiar_string(trim($_GET['id']));
-            $query = query("SELECT a.prod_id, a.prod_nombre, a.prod_precio, a.prod_img, a.prod_descri, a.prod_canti, COUNT(a.prod_id) AS total_com, SUM(b.com_puntaje) AS total_puntaje FROM productos a LEFT JOIN comentarios b ON a.prod_id = b.com_prod_id WHERE prod_id = {$id}");
+            $query = query("SELECT a.prod_id, a.prod_nombre, a.prod_precio, a.prod_img, a.prod_descri, a.prod_canti, COUNT(a.prod_id) AS total_com, SUM(b.com_puntaje) AS total_puntaje FROM productos a INNER JOIN comentarios b ON a.prod_id = b.com_prod_id WHERE prod_id = {$id}");
             if(contar_filas($query) == 0){
                 redirect("./");
             } else{
