@@ -48,7 +48,7 @@
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="delete-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-body delete-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                     <a class="btn btn-danger btn-delete" href="login.html">Delete</a>

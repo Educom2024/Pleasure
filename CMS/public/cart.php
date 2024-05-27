@@ -20,9 +20,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php get_mostrarItemsCarrito(); ?>
+                    <?php $validarItems = get_mostrarItemsCarrito(); ?>
                 </tbody>
             </table>
+
+            <div id="wallet_container"></div>
             <?php 
                 carritoRestar();
                 carritoAumentar();
@@ -31,5 +33,19 @@
             
         </div>
     </section>
+
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+
+    <script>
+        const mp = new MercadoPago('TEST-7008c1fa-67f1-44e5-b642-a8ba4886f50d');
+        const bricksBuilder = mp.bricks();
+
+        mp.bricks().create("wallet", "wallet_container", {
+            initialization: {
+                preferenceId: "<?php echo $validarItems[1]; ?>",
+                redirectMode: "modal",
+            },
+        });
+    </script>
 
     <?php include(VIEW_FRONT . DS . "footer.php"); ?>

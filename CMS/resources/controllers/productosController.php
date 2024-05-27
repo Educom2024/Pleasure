@@ -99,5 +99,5 @@ DELIMITADOR;
             set_mensaje(display_msj("Producto eliminado correctamente", "success"));
             redirect("index.php?productos");
         }
-    }
+    } 
 ?>

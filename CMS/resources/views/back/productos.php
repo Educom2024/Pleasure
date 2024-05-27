@@ -26,7 +26,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                    <?php get_productos();?>
+                        <?php get_productos(); ?>
                     </tbody>
                 </table>
                 <?php post_productoDelete(); ?>

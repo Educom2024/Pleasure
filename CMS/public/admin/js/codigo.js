@@ -9,6 +9,7 @@ $(document).ready(function(){
         const delete_url = `index.php?${tabla}&${accion}=${id}`;
         $('.delete-title').html(titulo);
         $('.delete-body').html('¿Estas seguro de eliminar el item?');
+        $('.btn-delete').html(accion);
         $('.btn-delete').attr('href', delete_url);
         $('#deleteModal').modal('show');
     })
